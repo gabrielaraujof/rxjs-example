@@ -1,0 +1,63 @@
+body {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search,
+.chars {
+    padding: 1rem;
+}
+
+.search {
+    max-width: 720px;
+
+    input[name=search] {
+        border-radius: 2em;
+        border: 1px solid #dfe1e5;
+        padding: 1em 2em;
+        width: 100%;
+
+        &:hover, &:active, &:focus {
+            outline: none;
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        }
+        
+        &::placeholder {
+            font-style: italic;
+        }
+    }
+}
+
+
+.chars {
+    &-list {
+        padding: 0;
+        
+        li {
+            list-style-type: none;
+        }
+
+        &.chars--empty,
+        &.chars--loading {
+            display: none;
+        }
+    }
+    
+    &-empty-message,
+    &-loading-message {
+        display: none;
+    }
+
+    &-empty-message {
+        .chars--empty & {
+            display: block;
+        }
+    }
+
+    &-loading-message {
+        .chars--loading & {
+            display: block;
+        }
+    }
+}
+

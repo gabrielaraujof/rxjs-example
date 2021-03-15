@@ -1,0 +1,29 @@
+{
+  "name": "rxjs-example",
+  "version": "1.0.0",
+  "description": "RxJS: simple example of its usage",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielaraujof/rxjs-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielaraujof/rxjs-example/issues"
+  },
+  "homepage": "https://github.com/gabrielaraujof/rxjs-example#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.628",
+    "parcel": "^2.0.0-nightly.626"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.6"
+  }
+}
